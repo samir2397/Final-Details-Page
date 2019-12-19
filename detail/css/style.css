@@ -1,0 +1,504 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
+}
+
+#header {
+  opacity: 0.8;
+  background-color: black;
+  width: 100%;
+}
+
+#header img {
+  cursor: pointer;
+  width: 100%;
+}
+
+#header ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#header ul li {
+  color: white;
+  list-style: none;
+  padding: 10px;
+}
+
+#header ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+#header ul li a:hover {
+  color: red;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#header .ic i {
+  color: white;
+  cursor: pointer;
+}
+
+#header .ic i:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.middle-center {
+  padding: 12rem 0;
+  position: relative;
+  z-index: 15;
+}
+
+#top {
+  position: relative;
+  background-image: url(../image/bg1.jpg);
+}
+
+#top::after {
+  content: '';
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  right: 0%;
+  left: 0%;
+  background-color: black;
+  opacity: .7;
+}
+
+#top h1 {
+  color: #fff;
+  font-weight: 700;
+}
+
+#top a {
+  color: #b4afaf;
+  text-decoration: underline;
+}
+
+#top a:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#top i {
+  padding: 5px;
+  color: #7c7979;
+}
+
+#detail .slider {
+  padding-top: 50px;
+}
+
+#detail .slider .slide-wrapper {
+  width: 100%;
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+  color: aliceblue;
+}
+
+#detail .slider .slide-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  left: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#detail .slider .slide-wrapper ul img {
+  width: 1300px;
+  height: 100%;
+}
+
+#detail .slider #prevIcon, #detail .slider #nextIcon {
+  position: absolute;
+  top: 50%;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#detail .slider #nextIcon {
+  right: 25px;
+  background-color: #181717;
+}
+
+#detail .slider #nextIcon:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#detail .slider #prevIcon {
+  left: 25px;
+  background-color: #181717;
+}
+
+#detail .slider #prevIcon:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#detail .list img {
+  width: 19.2%;
+  cursor: pointer;
+}
+
+#detail .blog {
+  padding-top: 20px;
+}
+
+#detail .blog ul {
+  list-style: none;
+}
+
+#detail .blog ul li {
+  color: #868181;
+}
+
+#detail .blog ul li span {
+  color: black;
+}
+
+#detail .blog .no p {
+  color: #636161;
+}
+
+#detail .blog .no h2 {
+  font-weight: 700;
+}
+
+#detail .blog .no h3 {
+  font-size: 20px;
+}
+
+#detail .related {
+  padding-top: 50px;
+}
+
+#detail .related .cars {
+  background-color: black;
+  color: white;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#detail .related .cars h2 {
+  font-weight: 700;
+}
+
+#detail .related .cars h2 img {
+  width: 13%;
+}
+
+#detail .related .cars p {
+  font-weight: 300;
+  color: #8b8a8a;
+}
+
+#detail .related .cars img {
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+#detail .related .cars a {
+  text-decoration: underline;
+  color: #e6dddd;
+}
+
+#detail .related .cars a:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+#detail .related .cars .sp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 20px;
+}
+
+#detail .related .cars .sp h5 {
+  color: red;
+}
+
+#detail .related .cars .sp h6 {
+  color: #7c7979;
+}
+
+#features {
+  padding-bottom: 50px;
+  /* Style the buttons inside the tab */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+  /* Style the tab content */
+}
+
+#features .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+
+#features .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+#features .tab button:hover {
+  background-color: #ddd;
+}
+
+#features .tab button.active {
+  background-color: #ccc;
+}
+
+#features .tabcontent {
+  display: none;
+  padding: 40px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+#features .tabcontent ul {
+  list-style: none;
+  padding: 50px;
+}
+
+#features .tabcontent ul li {
+  padding: 5px;
+  font-weight: 700;
+}
+
+#owerviev {
+  padding-bottom: 50px;
+}
+
+#owerviev .accordion {
+  color: #444;
+  cursor: pointer;
+  padding: 30px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  -webkit-transition: 0.9s;
+  transition: 0.9s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#owerviev .accordion i {
+  color: red;
+}
+
+#owerviev .panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+#footer {
+  background-color: #1d1c1c;
+}
+
+#footer h2 {
+  padding: 120px 0px 0px 20px;
+  color: white;
+  font-size: 30px;
+}
+
+#footer h2 img {
+  width: 15%;
+  padding-left: 18px;
+}
+
+#footer .about {
+  padding-top: 55px;
+  padding-left: 18px;
+}
+
+#footer .about p {
+  padding-top: 10px;
+  color: #bbbbbb;
+}
+
+#footer .about p a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer .about p a:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .icon {
+  padding-top: 20px;
+  padding-left: 18px;
+}
+
+#footer .icon i {
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 50px;
+  border: 1px solid;
+  color: #fff;
+  background-color: #302f2f;
+  border-style: none;
+}
+
+#footer .icon i:hover {
+  background-color: #ff3837;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .latest {
+  padding-top: 55px;
+  padding-left: 18px;
+}
+
+#footer .latest h4 {
+  color: white;
+  padding-bottom: 25px;
+}
+
+#footer .latest h4 img {
+  width: 15%;
+  padding-left: 18px;
+}
+
+#footer .latest span {
+  color: white;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+#footer .latest span:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .latest p {
+  cursor: pointer;
+  font-size: 15px;
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+#footer .latest p a {
+  color: #bbbbbb;
+}
+
+#footer .latest p a:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+#footer .quest {
+  padding-top: 55px;
+  padding-left: 18px;
+}
+
+#footer .quest input {
+  background: none;
+  border: none;
+  height: 35px;
+  width: 70%;
+  border-bottom: 1px solid #3e3e3e;
+  color: #979797;
+}
+
+#footer .quest .i1 {
+  height: 60px;
+}
+
+#footer .quest .i2 {
+  height: 60px;
+}
+
+#footer .quest .i3 {
+  resize: none;
+  padding: 5px 0;
+}
+
+#footer .quest button {
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 50px;
+  padding-bottom: 0.5em;
+  padding: 0.5em 2.5em;
+  background-color: #ff3837;
+  border-style: none;
+}
+
+#footer .quest button:hover {
+  background-color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  -webkit-box-shadow: 0 0 20px 8px #7a0202;
+          box-shadow: 0 0 20px 8px #7a0202;
+}
+
+#end {
+  width: 100%;
+  background-color: black;
+}
+
+#end p {
+  color: #fff;
+  padding-top: 30px;
+}
+
+#end ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 15px;
+}
+
+#end ul li {
+  list-style: none;
+  padding: 10px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#end ul li:hover {
+  color: red;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,407 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+#header{
+    opacity: 0.8;
+    background-color: black;
+    width: 100%;
+    img{
+        cursor: pointer;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        li{
+            color: white;
+            list-style: none;
+            padding: 10px;
+            a{
+                text-decoration: none;
+                color:white;
+                &:hover{
+                    color:red;
+                    transition: 0.4s;
+                }
+            }
+        }
+    }
+    .ic{
+        i{
+           color: white;
+            cursor: pointer;
+            &:hover{
+                color: red;
+                transition: 0.3s;
+            }
+       }
+    }
+
+}
+.middle-center {
+    padding: 12rem 0;
+    position: relative;
+    z-index: 15;
+
+}
+#top{
+    position: relative;
+    background-image: url(../image/bg1.jpg);
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0%;
+        bottom: 0%;
+        right: 0%;
+        left: 0%;
+        background-color: black;
+        opacity: .7;
+
+    }
+    h1{
+        color: #fff;
+        font-weight: 700;
+    }
+    a{
+        color:rgb(180, 175, 175);
+        text-decoration: underline;
+        &:hover{
+            color: red;
+            transition: 0.3s;
+            text-decoration: none;
+        }
+    }
+    i{
+        padding: 5px;
+        color: rgb(124, 121, 121);
+    }
+}
+#detail{
+    .slider{
+        padding-top: 50px;
+           .slide-wrapper{
+        width: 100%;
+        position: relative;
+        margin: auto;
+        overflow: hidden;
+        color: aliceblue
+    }
+    .slide-wrapper ul{
+        display: flex;
+        position: relative;
+        transition: all .3s ;
+        left: 0;
+        padding: 0;
+        list-style: none;
+    }
+    .slide-wrapper ul img{
+        width: 1300px;
+        height: 100%;
+    }
+    #prevIcon,#nextIcon{
+        position: absolute;
+        top: 50%;
+        font-size: 2em;
+        cursor: pointer;
+    }
+    #nextIcon{
+        right: 25px;
+        background-color: rgb(24, 23, 23);
+        &:hover{
+            color: red;
+            transition: 0.3s;
+        }
+    }
+    #prevIcon{
+        left: 25px;
+        background-color: rgb(24, 23, 23);
+        &:hover{
+            color: red;
+            transition: 0.3s;
+        }
+    }
+    }
+    .list{
+        // text-align: center;
+        img{
+            width: 19.2%;
+            cursor: pointer;
+        }
+    }
+    .blog{
+        padding-top: 20px;
+        ul{
+            list-style: none;
+            li{
+                color: rgb(134, 129, 129);
+                span{
+                    color: rgb(0, 0, 0);
+                }
+            }
+        }
+        .no{
+            p{
+                color: rgb(99, 97, 97);
+            }
+            h2{
+                font-weight: 700;
+            }
+            h3{
+                font-size: 20px;
+            }
+        }
+    }
+    .related{
+        padding-top: 50px;
+           .cars{
+        background-color: black;
+        color: rgb(255, 255, 255);
+        padding: 50px;
+        border-radius: 10px;
+        h2{
+            font-weight: 700;
+            img{
+                width: 13%;
+            }
+        }
+        p{
+            font-weight: 300;
+            color: rgb(139, 138, 138);
+        }
+        img{
+            padding-top: 10px;
+            cursor: pointer;
+        }
+        a{
+         text-decoration: underline;
+         color: rgb(230, 221, 221);
+         &:hover{
+             color: red;
+             transition: 0.3s;
+             text-decoration: none;
+         }
+        }
+        .sp{
+            display: flex;
+            padding-top: 20px;
+            h5{
+                color: red;
+        }  
+        h6{
+            color: rgb(124, 121, 121);
+        }
+        }
+  
+    }
+    }
+}
+#features{
+    padding-bottom: 50px;
+    .tab {
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+      }
+      
+      /* Style the buttons inside the tab */
+      .tab button {
+        background-color: inherit;
+        float: left;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 14px 16px;
+        transition: 0.3s;
+        font-size: 17px;
+      }
+      
+      /* Change background color of buttons on hover */
+      .tab button:hover {
+        background-color: #ddd;
+      }
+      
+      /* Create an active/current tablink class */
+      .tab button.active {
+        background-color: #ccc;
+      }
+      
+      /* Style the tab content */
+      .tabcontent {
+        display: none;
+        padding: 40px 12px;
+        border: 1px solid #ccc;
+        border-top: none;
+        ul{
+            list-style: none;
+            padding: 50px;
+            li{
+                padding: 5px;
+                font-weight: 700;
+            }
+        }
+      }
+}
+#owerviev{
+    padding-bottom: 50px;
+    .accordion {
+        color: #444;
+        cursor: pointer;
+        padding: 30px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+        transition: 0.9s;
+        display: flex;
+        justify-content: space-between;
+        i{
+            color: red;
+        }
+      }      
+      .panel {
+        padding: 0 18px;
+        display: none;
+        background-color: white;
+        overflow: hidden;
+      }
+}
+#footer{ 
+    background-color:#1d1c1c;
+    h2{
+        padding:120px 0px 0px 20px;
+        color: white;
+        font-size: 30px;
+      img{
+        width:15%;
+        padding-left: 18px;
+        }  
+    }
+    .about{
+        padding-top:55px;
+        padding-left: 18px;
+        p{
+            padding-top: 10px;
+            color: #bbbbbb;
+            a{
+                color:white;
+                text-decoration: none;
+                &:hover{
+                    color: red;
+                    transition: 0.3s;
+                }
+            }
+        }
+    }
+    .icon{
+        padding-top: 20px;
+        padding-left: 18px;
+        i{
+          font-size: 18px;
+          padding: 15px;
+          border-radius: 50px;
+          border:1px solid;
+          color: #fff;
+          background-color: #302f2f;
+          border-style: none;
+          &:hover{
+              background-color: #ff3837;
+              transition: 0.3s;
+          }
+        }        
+    }
+    .latest{
+        padding-top:55px;
+        padding-left: 18px;
+        h4{
+            color: white;
+            padding-bottom: 25px;
+           img{
+            width:15%;
+            padding-left: 18px;
+            } 
+        }  
+        span{
+            color: white;
+            cursor: pointer;
+            font-size: 15px;
+            &:hover{
+                color: red;
+                transition: 0.3s;
+            }
+        }
+        p{
+            cursor: pointer;
+            font-size: 15px;
+            padding-top: 10px;
+            padding-bottom: 25px;
+            a{
+                color: #bbbbbb;
+                &:hover{
+                color: red;
+                transition: 0.3s;
+            }
+            }
+        }
+    }
+    .quest{
+        padding-top:55px;
+        padding-left: 18px;
+        input{
+            background: none;
+            border: none;
+            height: 35px;
+            width: 70%;
+            border-bottom: 1px solid #3e3e3e;
+            color: #979797;
+        }
+        .i1{
+            height: 60px;
+        }
+        .i2{
+            height: 60px;
+        }
+        .i3{
+            resize: none;
+            padding: 5px 0;
+        }
+        button{
+            color: #fff;
+            border-radius: 5px;
+            margin-top: 50px;
+            padding-bottom: 0.5em;
+            padding: 0.5em 2.5em;
+            background-color: #ff3837;
+            border-style: none;
+            &:hover{
+                background-color:red;
+                transition: 0.3s;
+                box-shadow: 0 0 20px 8px rgb(122, 2, 2);
+            }
+        }
+    }
+}
+#end{
+    width: 100%;
+    background-color: black;
+    p{
+        color: #fff;
+        padding-top: 30px;
+    }
+    ul{
+        display: flex;
+        padding-top: 15px;
+        li{
+            list-style: none;
+            padding: 10px;
+            color: #fff;
+            cursor: pointer;
+            
+            &:hover{
+                color: red;
+                transition: 0.3s;
+            }
+        }
+    }
+}
